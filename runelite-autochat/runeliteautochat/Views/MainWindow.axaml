@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:runeliteautochat.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="runeliteautochat.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        xmlns:views="clr-namespace:runeliteautochat.Views"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="runeliteautochat">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <DockPanel>
+        <Border DockPanel.Dock="Left" Background="#405559"
+                BorderBrush="Black" Width="300" BorderThickness="1">
+            <views:ProcView></views:ProcView>
+        </Border>
+        
+        <Border DockPanel.Dock="Right"  Background="#409999" BorderBrush="Black" BorderThickness="1"></Border>
+    </DockPanel>
+
+</Window>
