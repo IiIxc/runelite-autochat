@@ -22,7 +22,9 @@
             <views:ProcView></views:ProcView>
         </Border>
         
-        <Border DockPanel.Dock="Right"  Background="#409999" BorderBrush="Black" BorderThickness="1"></Border>
+        <Border DockPanel.Dock="Right"  Background="#409999" BorderBrush="Black" BorderThickness="1">
+            <views:SettingsView></views:SettingsView>
+        </Border>
     </DockPanel>
 
 </Window>

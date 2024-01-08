@@ -17,6 +17,7 @@
                             BorderBrush="Black" BorderThickness="3"
                             Padding="5">
                         <StackPanel Orientation="Horizontal">
+                            <!--Ignore errors saying path is not bound, it is. -->
                             <TextBlock Text="{Binding Title}" Margin="3"/>
                             <TextBlock Text="{Binding Number}" Margin="3"/>
                         </StackPanel>
