@@ -3,11 +3,11 @@
 public class ProcessModel
 {
     public string Title { get; set; }
-    public int Number{ get; set; }
+    public int ProcId{ get; set; }
 
-    public ProcessModel(string title, int number)
+    public ProcessModel(string title, int procId)
     {
         Title = title;
-        Number = number;
+        ProcId = procId;
     }
 }

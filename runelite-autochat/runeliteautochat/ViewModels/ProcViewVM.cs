@@ -16,18 +16,22 @@ public class ProcViewVM : ViewModelBase
         CheckForProcesses();
     }
 
-    Object CheckForProcesses()
+    private Object CheckForProcesses()
     {
-        Process[] RuneLiteProcesses = Process.GetProcessesByName("RuneLite");
-
-
+        // Process[] RuneLiteProcesses = Process.GetProcessesByName("RuneLite");
+        //
+        //
         ActiveProcesses = new ObservableCollection<ProcessModel> {};
+        //
+        //
+        //
+        // foreach (var process in RuneLiteProcesses)
+        // {
+        //     ActiveProcesses.Add(new ProcessModel(process.MainWindowTitle,process.Id));
+        // }
         
-        foreach (var process in RuneLiteProcesses)
-        {
-            ActiveProcesses.Add(new ProcessModel(process.MainWindowTitle,process.Id));
-        }
-
+        // ActiveProcesses = new ObservableCollection<ProcessModel> {};
+        ActiveProcesses.Add(new ProcessModel(DataStore.RuneliteWindowTitle, 1234));
         return ActiveProcesses;
     }
 

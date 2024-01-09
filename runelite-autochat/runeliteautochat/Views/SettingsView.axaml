@@ -5,8 +5,10 @@
              xmlns:viewModels="clr-namespace:runeliteautochat.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="runeliteautochat.Views.SettingsView"
-             x:DataType="viewModels:SettingsVM">
+             x:DataType="viewModels:SettingsVM"
+             >
     <StackPanel Orientation="Vertical">
+        
         <TextBlock Margin="10">Settings: </TextBlock>
         <StackPanel Orientation="Horizontal" >
             <TextBlock Margin="10" Padding="10">Interval (s):  </TextBlock>
@@ -17,7 +19,7 @@
             <TextBox Height="100" Width="600"></TextBox>
         </StackPanel>
         
-        <Button Width="100" Margin="20,20,0,0" HorizontalContentAlignment="Center">Start</Button>
+        <Button Width="100" Margin="20,20,0,0" HorizontalContentAlignment="Center">Start!</Button>
         
     </StackPanel>
 </UserControl>

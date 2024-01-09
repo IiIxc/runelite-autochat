@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using runeliteautochat.ViewModels;
 using runeliteautochat.Views;
+using runeliteautochat.Models;
 
 namespace runeliteautochat;
 
